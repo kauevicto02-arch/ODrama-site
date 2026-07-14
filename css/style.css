@@ -700,3 +700,76 @@ a:focus-visible {
   margin-top: 12px;
   margin-bottom: 26px;
 }
+.synopsis {
+  transition: all .3s ease;
+}
+
+.synopsis.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more-btn{
+  margin-top:10px;
+
+  background:none;
+  border:none;
+
+  color:#22c55e;
+
+  font-size:14px;
+  font-weight:700;
+
+  cursor:pointer;
+}
+/* SINOPSE EXPANSÍVEL */
+
+.synopsis {
+  display: block;
+  overflow: visible;
+  max-height: none;
+}
+
+.synopsis.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #22c55e;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.synopsis {
+  display: block;
+  overflow: visible;
+}
+
+.synopsis.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #22c55e;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}

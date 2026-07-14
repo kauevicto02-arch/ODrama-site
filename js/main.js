@@ -260,3 +260,23 @@ function configurarBotaoFixo() {
     );
   }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const synopsis = document.getElementById("movie-synopsis");
+  const readMoreButton = document.getElementById("read-more-btn");
+
+  if (!synopsis || !readMoreButton) {
+    console.log("Botão Ler mais ou sinopse não encontrados.");
+    return;
+  }
+
+  readMoreButton.addEventListener("click", () => {
+    synopsis.classList.toggle("collapsed");
+
+    const isCollapsed = synopsis.classList.contains("collapsed");
+
+    readMoreButton.textContent = isCollapsed
+      ? "Ler mais ▼"
+      : "Ler menos ▲";
+  });
+});
+
