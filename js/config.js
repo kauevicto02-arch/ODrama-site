@@ -18,19 +18,19 @@
 
 const PAGE_CONFIG = {
   // Nome do filme (aparece em destaque no topo da página)
-  movieTitle: "OBSESSION",
+  movieTitle: "O Drama",
 
   // Ano de lançamento
   movieYear: "2026",
 
   // Gênero(s), separados por "•"
-  movieGenre: "Terror • Suspense",
+  movieGenre: "Drama • Romance",
 
   // Duração do filme
-  movieDuration: "1h 48min",
+  movieDuration: "1h 45min",
 
   // Nota do filme (exibida ao lado da estrela ★)
-  movieRating: "7,0/10",
+  movieRating: "7,5/10",
 
   // Idiomas disponíveis
   movieLanguage: "🇧🇷 Dublado + Legendado",
@@ -46,7 +46,7 @@ const PAGE_CONFIG = {
   priceValue: 9.9,
 
   // Sinopse curta (recomendado: no máximo 3 linhas de texto)
-  synopsis: "Depois de fazer um desejo para conquistar a garota por quem é apaixonado, um jovem percebe que conseguiu exatamente o que queria. Mas o que parecia um sonho rapidamente se transforma em um pesadelo, revelando que alguns desejos têm um preço assustador.",
+  synopsis: "Dias antes do casamento, Emma e Charlie vivem o que deveria ser a semana mais feliz de suas vidas. Mas uma revelação inesperada coloca o relacionamento em risco, obrigando os dois a confrontarem segredos, confiança e tudo o que acreditavam saber um sobre o outro. Entre momentos de tensão, humor e romance, a história mostra até onde um casal consegue ir antes de dizer sim",
 
   // Link do checkout / página de pagamento
   // Troque "COLE_AQUI_O_LINK_DO_CHECKOUT" pelo link real
