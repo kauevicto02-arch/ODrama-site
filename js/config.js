@@ -39,7 +39,7 @@ const PAGE_CONFIG = {
   movieQuality: "Full HD",
 
   // Preço exibido para o visitante (texto, com "R$")
-  price: "R$ 9,90",
+  price: "R$ 5,99",
 
   // Preço em formato numérico, usado nos eventos do Meta Pixel
   // Use ponto (.) como separador decimal, exemplo: 9.90
