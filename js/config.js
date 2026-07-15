@@ -18,7 +18,7 @@
 
 const PAGE_CONFIG = {
   // Nome do filme (aparece em destaque no topo da página)
-  movieTitle: "Obsession",
+  movieTitle: "OBSESSION",
 
   // Ano de lançamento
   movieYear: "2026",
