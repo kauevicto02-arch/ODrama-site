@@ -773,3 +773,173 @@ a:focus-visible {
   font-weight: 800;
   cursor: pointer;
 }
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+/* VÍDEO DA HERO */
+
+.hero__media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #050505;
+}
+
+.hero__video {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+  object-position: center;
+
+  background:#050505;
+}
+
+/* Gradiente para deixar os textos legíveis */
+.hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.22) 35%,
+      rgba(0, 0, 0, 0.68) 62%,
+      rgba(0, 0, 0, 0.96) 100%
+    );
+}
+
+/* Informações sempre acima do vídeo e do gradiente */
+.hero__content {
+  position: relative;
+  z-index: 3;
+}
+
+/* Melhora a leitura dos textos */
+.hero__title {
+  color: #ffffff;
+  text-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.95),
+    0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.hero__meta,
+.hero__language,
+.hero__eyebrow,
+.hero__secure {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
+}
+
+.hero__price {
+  text-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.95),
+    0 0 25px rgba(34, 197, 94, 0.18);
+}
+/* TESTE: FORÇAR EXIBIÇÃO DO TRAILER */
+
+.hero__video {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  position: absolute !important;
+  inset: 0 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+
+  z-index: 1 !important;
+}
+/* =====================================================
+   CORREÇÃO: VÍDEO VISÍVEL E CAMADAS DA HERO
+===================================================== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #050505;
+}
+
+.hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: transparent !important;
+}
+
+.hero__video {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+
+  filter: none !important;
+  pointer-events: auto !important;
+}
+
+/* Camada escura suave, sem esconder o vídeo */
+.hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  pointer-events: none !important;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.12) 35%,
+    rgba(0, 0, 0, 0.45) 65%,
+    rgba(0, 0, 0, 0.82) 100%
+  ) !important;
+}
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero__media{
+    position:absolute;
+    inset:0;
+    z-index:0;
+}
+
+.hero__video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.hero__content{
+    position:relative;
+    z-index:2;
+}

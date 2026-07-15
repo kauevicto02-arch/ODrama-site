@@ -82,31 +82,22 @@
     <header class="hero" id="hero">
 
       <div class="hero__media">
-        <video
-          id="trailer-video"
-          class="hero__video"
-          autoplay
-          muted
-          loop
-          playsinline
-          webkit-playsinline="true"
-          x5-playsinline="true"
-          preload="metadata"
-          poster="assets/images/fallback.jpg"
-          aria-hidden="true"
-        >
-          <source src="assets/videos/trailer.mp4" type="video/mp4" />
-        </video>
+        <div class="hero__media">
 
-        <!-- Imagem de fallback exibida via JS caso o vídeo não carregue -->
-        <img
-          id="fallback-image"
-          class="hero__fallback"
-          src="assets/images/fallback.jpg"
-          alt=""
-          loading="lazy"
-          hidden
-        />
+  <video
+    id="trailer-video"
+    class="hero__video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    poster="assets/images/poster.jpg"
+  >
+    <source src="assets/videos/trailer.mp4" type="video/mp4">
+  </video>
+
+</div>
 
         <div class="hero__gradient" aria-hidden="true"></div>
       </div>

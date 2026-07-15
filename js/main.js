@@ -279,4 +279,15 @@ document.addEventListener("DOMContentLoaded", () => {
       : "Ler menos ▲";
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+
+    const video = document.getElementById("trailer-video");
+
+    if (!video) return;
+
+    video.muted = true;
+
+    video.play().catch(() => {});
+
+});
 
